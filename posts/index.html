@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Posts
-background: '/img/bg-post.jpg'
+title: Events
+background: '/img/mountain.gif'
 ---
 
 {% for post in paginator.posts %}
@@ -10,6 +10,7 @@ background: '/img/bg-post.jpg'
     <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
       <h2 class="post-title">{{ post.title }}</h2>
       {% if post.subtitle %}
+	
       <h3 class="post-subtitle">{{ post.subtitle }}</h3>
       {% else %}
       <h3 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 15 }}</h3>
