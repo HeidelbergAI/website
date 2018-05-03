@@ -36,15 +36,20 @@ layout: default
 
           <article class="post-preview">
             <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-              <h2 class="post-title">{{ post.title }}</h2>
+              <h2 class="post-title"><font size=6>{{ post.title }}</font></h2>
               {% if post.subtitle %}
-                <h3 class="post-subtitle">{{ post.subtitle }}</h3>
+                <h3 class="post-subtitle"><font size=5>{{ post.subtitle }}</font></h3>
               {% else %}
                 <h3 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 15 }}</h3>
               {% endif %}
-            </a>
-            <p class="post-meta">
-              {{ post.date | date: '%B %d, %Y' }}</p>
+           </a>
+	  
+            
+ 	{% if post.future_date %}
+            <p class="post-meta"> <font color=#0085A1>upcoming:   {{ post.date | date: '%B %d, %Y' }}</font></p>
+	{% else %}
+ 		<p class="post-meta">  {{ post.date | date: '%B %d, %Y' }}</p>
+           {% endif %}
           </article>
 
           <hr>
