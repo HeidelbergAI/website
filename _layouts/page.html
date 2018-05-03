@@ -4,13 +4,9 @@ layout: default
 
 <!-- Page Header -->
 {% if page.background %}
-<header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
-{% else %}
-{% if page.background_from_web %}
-<header class="masthead" style="background-image: url('{{ page.background_from_web | replace: '//', '/' }}')">
+<header class="masthead" style="background-image: url('{{ page.background | replace: '//', '/' }}')">
 {% else %}
 <header class="masthead">
-{% endif %}
 {% endif %}
   <div class="overlay"></div>
   <div class="container">
