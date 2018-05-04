@@ -19,7 +19,7 @@ layout: default
               <span class="subheading">{{ site.description }}</span>
             {% endif %}
 	    <br>
-   	    <a href="{{"/2018/05/15/parameter-space-noise" | relative_url }}" class="btn">Info and Registration</a>	
+   	    <a href="{{"/2018/05/15/parameter-space-noise" | relative_url }}" class="btn">Go to event</a>	
 	  </div>
         </div>
       </div>
@@ -30,10 +30,23 @@ layout: default
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
 
-        {{ content }}
+        
+<h3>Agenda</h3><p>
+heidelberg.ai is a non-profit platform for enthusiasts, students and researchers in the field of Artificial Intelligence. We connect over 500 members.<br><br> 
+We provide opportunities for technical discussions, networking and connecting with industrial partners. Our vision is to create a hub of AI expertise in the Heidelberg area.
+People with all backgrounds and knowledge levels are welcome to participate.<br><br>
+A list of AI-related university courses can be found at the <a href="https://hci.iwr.uni-heidelberg.de/mlai-in-hd" style="text-decoration: underline"> HCI website. </a>
 
-        <!-- Home Post List -->
-        {% for post in site.posts limit : 5 %}
+</p>
+ <hr><br>
+
+<h3>Join Us</h3>
+<p>Sign up for notification of new events on our  <a href="https://www.meetup.com/Heidelberg-Artificial-Intelligence-Meetup/
+" style="text-decoration: underline">meetup page.</a></p>
+<p>Join our disucussion platform on <a href=" https://tinyurl.com/y7cnnhar">slack.</a></p>  <br> <br> 
+
+        <!-- Home Post List 
+        {% for post in site.posts limit : 3 %}
 
           <article class="post-preview">
             <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
@@ -57,11 +70,11 @@ layout: default
 
         {% endfor %}
 
-        <!-- Pager -->
+        
         <div class="clearfix">
           <a class="btn btn-primary float-right" href="{{"/posts" | relative_url }}">View All Posts &rarr;</a>
         </div>
 
       </div>
     </div>
-  </div>
+  </div> -->
