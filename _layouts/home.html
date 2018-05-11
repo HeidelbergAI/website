@@ -30,10 +30,11 @@ layout: default
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
 
-<h3 class="section-heading" >  Events</h3><p>
+<h3 class="section-heading" >Recent Events</h3><p>
  <!-- Home Post List -->
-        {% for post in site.posts limit : 2 %}
-
+        {% for post in site.posts limit : 3 %}
+	{% if post.future_date %}
+	{% else %}
           <article class="post-preview">
             <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
               <h2 class="post-title"><font size=6>{{ post.title }}</font></h2>
@@ -44,16 +45,12 @@ layout: default
               {% endif %}
            </a>
 	  
-            
- 	{% if post.future_date %}
-            <p class="post-meta"> <font color=#0085A1>upcoming:   {{ post.date | date: '%B %d, %Y' }}</font></p>
-	{% else %}
- 		<p class="post-meta">  {{ post.date | date: '%B %d, %Y' }}</p>
-           {% endif %}
+	  <p class="post-meta">  {{ post.date | date: '%B %d, %Y' }}</p>
           </article>
 
-          <hr>
 
+          <hr>
+	{% endif %}
         {% endfor %}
 
         
