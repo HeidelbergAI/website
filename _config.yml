@@ -3,7 +3,7 @@ author:
 email:             
 description:	
 author:            
-baseurl:           "/website"
+baseurl:          
 url:               "https://heidelbergai.github.io"
 
 # Social Profiles
