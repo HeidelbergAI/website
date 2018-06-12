@@ -1,0 +1,28 @@
+---
+layout: post
+title:  "Parameter Space Noise for Exploration"
+subtitle: "Matthias Plappert, OpenAI"
+date:   2018-05-15 19:00:0 +0000
+background: '/img/posts/parameter_space.png'
+future_date: False
+layer_shift: True
+---
+
+
+<h2 class="section-heading">Abstract</h2>
+
+<p>All decision-making problems fundamentally aim at optimizing for a score that measures success. Very often however the outcome of a decision is not immediately dependent on an action, making the score indifferentiable with respect to this action(s). Broadly speaking, the field of reinforcement learning (RL) is looking at a particular way to overcome this problem. Matthias Plappert, a KIT graduate who wrote his Master's Thesis at OpenAI and has joined them full-time now, will first introduce us to the field of deep reinforcement learning and then dive straight into very current research questions.
+</p>
+
+<p>One part of Matthias' current research is concerned with an intrinsic problem encountered in RL: The way agents explore the action space in order to find new solutions, while making use of learned behavior (exploitation). Deep reinforcement learning methods generally engage in exploratory behavior through noise injection in the action space. An alternative is to add noise directly to the agent's parameters, which can lead to more consistent exploration and a richer set of behaviors. Methods such as evolutionary strategies use parameter perturbations, but discard all temporal structure in the process and require significantly more samples. Combining parameter noise with traditional RL methods allows to combine the best of both worlds. In Matthias latest work with OpenAI he was able to demonstrate that both off- and on-policy methods benefit from this approach through experimental comparison of DQN, DDPG, and TRPO on high-dimensional discrete action environments as well as continuous control tasks.</p>
+
+<p>Besides a general introduction to RL, Matthias' talk will present the major findings of his aforementioned recent paper that will be presented at ICLR shortly, here's a link to a preprint: <a href=https://openreview.net/pdf?id=ByBAl2eAZ>openreview</a></p>
+
+<p>More of his work, including an extention to Keras specifically for RL, can be found here: <a href="http://matthiasplappert.com/">matthiasplappert.com</a></p>
+
+
+
+
+<h2 class="section-heading">Slides</h2><br>
+
+<embed src="/img/matthias_plappert_slides.pdf" width=100% height=480>
