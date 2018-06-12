@@ -32,7 +32,7 @@ layout: default
 
 <h3 class="section-heading" >Recent Events</h3><p>
  <!-- Home Post List -->
-        {% for post in site.posts limit : 2 %}
+        {% for post in site.posts limit : 3 %}
 	{% if post.future_date %}
 	{% else %}
           <article class="post-preview">
