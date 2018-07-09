@@ -3,3 +3,18 @@
 ---
 
 @import "styles";
+
+
+.image2{
+   display: none;
+}
+
+@media only screen and (max-width: 1000px){ //some value
+   .image1{
+     display: none;
+   }
+
+   .image2{
+     display: block;
+   }
+}
