@@ -19,7 +19,7 @@ layout: default
               <span class="subheading">{{ site.description }}</span>
             {% endif %}
 	    <br>
-   	    <a href="{{"/2018/09/25/jeff-dean.html" | relative_url }}" class="btn">Go to event</a>	
+   	    <a href="{{"/2018/10/29/med-gan.html" | relative_url }}" class="btn">Go to event</a>	
 	  </div>
         </div>
       </div>
@@ -32,7 +32,7 @@ layout: default
 
 <h3 class="section-heading" >Recent Events</h3><p>
  <!-- Home Post List -->
-        {% for post in site.posts limit : 4 %}
+        {% for post in site.posts limit : 3 %}
 	{% if post.future_date %}
 	{% else %}
           <article class="post-preview">
