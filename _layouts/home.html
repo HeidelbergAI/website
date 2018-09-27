@@ -19,7 +19,7 @@ layout: default
               <span class="subheading">{{ site.description }}</span>
             {% endif %}
 	    <br>
-   	    <a href="{{"/2018/10/29/med-gan.html" | relative_url }}" class="btn">Go to event</a>	
+   	    <a href="{{"/2018/10/11/part-segmentation.html" | relative_url }}" class="btn">Go to event</a>	
 	  </div>
         </div>
       </div>
@@ -30,9 +30,35 @@ layout: default
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
 
-<h3 class="section-heading" >Recent Events</h3><p>
+
+<h5 class="section-heading"><font color="grey">coming up later this year:</font></h5><p>
  <!-- Home Post List -->
-        {% for post in site.posts limit : 3 %}
+        {% for post in site.posts limit : 2 %}
+	{% if post.future_date %}
+	
+          <article class="post-preview">
+            <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
+              <h2 class="post-title"><font size=6>{{ post.title }}</font></h2>
+              {% if post.subtitle %}
+                <h3 class="post-subtitle"><font size=5>{{ post.subtitle }}</font></h3>
+              {% else %}
+                <h3 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 15 }}</h3>
+              {% endif %}
+           </a>
+	  
+	  <p class="post-meta">  {{ post.date | date: '%B %d, %Y' }}</p>
+          </article>
+
+
+          <hr>
+        {% else %}
+	{% endif %}
+        {% endfor %}
+
+ <!--
+<h3 class="section-heading" >Recent Events</h3><p>
+ 
+        {% for post in site.posts limit : 5 %}
 	{% if post.future_date %}
 	{% else %}
           <article class="post-preview">
@@ -53,7 +79,7 @@ layout: default
 	{% endif %}
         {% endfor %}
 
-        
+  -->      
         <div class="clearfix">
           <a class="btn btn-primary float-right" href="{{"/posts" | relative_url }}">View All Events &rarr;</a>
         </div>
