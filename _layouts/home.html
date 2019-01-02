@@ -31,11 +31,11 @@ layout: default
       <div class="col-lg-8 col-md-10 mx-auto">
 
 
-<!--
+
 <p class="post-meta"><i><font color=#0085A1 size="5">coming up later this year:</font></i></p>
---!>
+
  <!-- Home Post List -->
-        {% for post in site.posts limit : 0 %}
+        {% for post in site.posts limit : 1 %}
 	{% if post.future_date %}
 	
           <article class="post-preview">
