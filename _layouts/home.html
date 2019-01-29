@@ -19,7 +19,7 @@ layout: default
               <span class="subheading">{{ site.description }}</span>
             {% endif %}
 	    <br>
-   	    <a href="{{"/2019/01/22/self-supervision.html" | relative_url }}" class="btn">Go to event</a>	
+   	    <a href="{{"/2019/02/12/quantum-computing-ai-x.html" | relative_url }}" class="btn">Go to event</a>
 	  </div>
         </div>
       </div>
@@ -36,7 +36,7 @@ layout: default
 
         {% for post in site.posts limit : 1 %}
 	{% if post.future_date %}
-	
+
           <article class="post-preview">
             <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
               <h2 class="post-title"><font size=6>{{ post.title }}</font></h2>
@@ -46,7 +46,7 @@ layout: default
                 <h3 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 15 }}</h3>
               {% endif %}
            </a>
-	  
+
 	  <p class="post-meta">  {{ post.date | date: '%B %d, %Y' }}</p>
           </article>
 
@@ -58,7 +58,7 @@ layout: default
 -->
  <!--
 <h3 class="section-heading" >Recent Events</h3><p>
- 
+
         {% for post in site.posts limit : 5 %}
 	{% if post.future_date %}
 	{% else %}
@@ -71,7 +71,7 @@ layout: default
                 <h3 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 15 }}</h3>
               {% endif %}
            </a>
-	  
+
 	  <p class="post-meta">  {{ post.date | date: '%B %d, %Y' }}</p>
           </article>
 
@@ -80,15 +80,15 @@ layout: default
 	{% endif %}
         {% endfor %}
 
-  -->     
-<!-- 
+  -->
+<!--
         <div class="clearfix">
           <a class="btn btn-primary float-right" href="{{"/posts" | relative_url }}">View All Events &rarr;</a>
         </div>
 --!>
-        
+
 <h3 class="section-heading" >  Agenda</h3><p>
-heidelberg.ai is a non-profit platform for enthusiasts, students and researchers in the field of Artificial Intelligence. We connect over 1000 members.<br><br> 
+heidelberg.ai is a non-profit platform for enthusiasts, students and researchers in the field of Artificial Intelligence. We connect over 1000 members.<br><br>
 We provide opportunities for technical discussions, networking and connecting with industrial partners. Our vision is to create a hub of AI expertise in the Heidelberg area.
 People with all backgrounds and knowledge levels are welcome to participate.<br><br>
 Aside from our events, the inclined AI padawan can tap into a wealth of AI-related seminars and lectures that can be found at the <a href="https://hci.iwr.uni-heidelberg.de/mlai-in-hd" style="text-decoration: underline"  target="_blank"> HCI website. </a>
@@ -100,4 +100,3 @@ Aside from our events, the inclined AI padawan can tap into a wealth of AI-relat
 <p>We manage our events through meetup.com. Registration to our platform let's you receive notifications of future events. To help us plan ahead and tie in with other attendees, you can additionally sign up for individual events. Interested? Proceed to free registration here:  <a href="https://www.meetup.com/Heidelberg-Artificial-Intelligence-Meetup/
 " style="text-decoration: underline" target="_blank">meetup page.</a></p>
 <p>Anything on your mind that you would like to share with the community? Get it out on our <a href=" https://tinyurl.com/y7cnnhar" target="_blank">slack channel.</a></p><br>
-       
