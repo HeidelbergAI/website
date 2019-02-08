@@ -1,19 +1,19 @@
-title:       <h3><font color="#fff9e6">January 22, 7pm&colon; <br><br>Self-Supervision (Learning to Learn), <br>Prof. Bjoern Ommer, Head of Computer Vision Group, Heidelberg University</font></h3>
-author:            
-email:             
-description:	
-author:            
-baseurl:          
+title:       <h3><font color="#fff9e6">February 12, 6pm&colon; <br><br>Quantum Computing & AI at Alphabet/Google X, <br>Jack Hidary, Quantum@X and AI@X</font></h3>
+author:
+email:
+description:
+author:
+baseurl:
 url:               "https://heidelbergai.github.io"
 
 # Social Profiles
 twitter_username:  SBootstrap
 github_username:   BlackrockDigital
-facebook_username: 
+facebook_username:
 
 # Build settings
 markdown:          kramdown
-paginate:          10 
+paginate:          10
 paginate_path:     "/posts/page:num/"
 plugins:
   - jekyll-feed
