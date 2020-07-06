@@ -5,9 +5,9 @@ layout: default
 <!-- Page Header -->
 {% if page.background %}
 <header class="masthead" style="background-image: url('{{ page.background }}')">
-{% else %}
-<header class="masthead">
-{% endif %}
+  {% else %}
+  <header class="masthead">
+    {% endif %}
 
     <div class="overlay"></div>
     <div class="container">
@@ -16,11 +16,11 @@ layout: default
           <div class="page-heading">
             <h1>{{ site.title }}</h1>
             {% if site.description %}
-              <span class="subheading">{{ site.description }}</span>
+            <span class="subheading">{{ site.description }}</span>
             {% endif %}
-	    <br>
-   	    <a href="{{"/2020/05/06/welling.html" | relative_url }}" class="btn">Go to event</a>
-	  </div>
+            <br>
+            <a href="{{"/2020/07/08/glocker.html" | relative_url }}" class="btn">Go to event</a>
+          </div>
         </div>
       </div>
     </div>
@@ -31,7 +31,7 @@ layout: default
       <div class="col-lg-8 col-md-10 mx-auto">
 
 
- <!--
+        <!--
 <p class="post-meta"><i><font color=#0085A1 size="5">also coming up:</font></i></p>
 
         {% for post in site.posts limit : 1 %}
@@ -56,7 +56,7 @@ layout: default
 	{% endif %}
         {% endfor %}
 -->
- <!--
+        <!--
 <h3 class="section-heading" >Recent Events</h3><p>
 
         {% for post in site.posts limit : 5 %}
@@ -81,7 +81,7 @@ layout: default
         {% endfor %}
 
   -->
-<!--
+        <!--
         <div class="clearfix">
           <a class="btn btn-primary float-right" href="{{"/posts" | relative_url }}">View All Events &rarr;</a>
         </div>
