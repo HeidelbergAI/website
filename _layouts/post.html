@@ -22,7 +22,10 @@ layout: default
 	 {% if post.future_date %}
 		upcoming:
 	  {% endif %}
-           {{ page.date | date: '%B %d, %Y' }}</span>
+      {% if page.do_not_show_date %}
+      {% else %}
+      {{ page.date | date: '%B %d, %Y' }}</span>
+      {% endif %}
         </div>
       </div>
     </div>
