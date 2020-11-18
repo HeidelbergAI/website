@@ -31,62 +31,6 @@ layout: default
       <div class="col-lg-8 col-md-10 mx-auto">
 
 
-        <!--
-<p class="post-meta"><i><font color=#0085A1 size="5">also coming up:</font></i></p>
-
-        {% for post in site.posts limit : 1 %}
-	{% if post.future_date %}
-
-          <article class="post-preview">
-            <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-              <h2 class="post-title"><font size=6>{{ post.title }}</font></h2>
-              {% if post.subtitle %}
-                <h3 class="post-subtitle"><font size=5>{{ post.subtitle }}</font></h3>
-              {% else %}
-                <h3 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 15 }}</h3>
-              {% endif %}
-           </a>
-
-	  <p class="post-meta">  {{ post.date | date: '%B %d, %Y' }}</p>
-          </article>
-
-
-          <hr>
-        {% else %}
-	{% endif %}
-        {% endfor %}
--->
-        <!--
-<h3 class="section-heading" >Recent Events</h3><p>
-
-        {% for post in site.posts limit : 5 %}
-	{% if post.future_date %}
-	{% else %}
-          <article class="post-preview">
-            <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">
-              <h2 class="post-title"><font size=6>{{ post.title }}</font></h2>
-              {% if post.subtitle %}
-                <h3 class="post-subtitle"><font size=5>{{ post.subtitle }}</font></h3>
-              {% else %}
-                <h3 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 15 }}</h3>
-              {% endif %}
-           </a>
-
-	  <p class="post-meta">  {{ post.date | date: '%B %d, %Y' }}</p>
-          </article>
-
-
-          <hr>
-	{% endif %}
-        {% endfor %}
-
-  -->
-        <!--
-        <div class="clearfix">
-          <a class="btn btn-primary float-right" href="{{"/posts" | relative_url }}">View All Events &rarr;</a>
-        </div>
---!>
-
 <h3 class="section-heading" >  Agenda</h3><p>
 heidelberg.ai is a non-profit platform for enthusiasts, students and researchers in the field of Artificial Intelligence. We connect over 1600 members.<br><br>
 We provide opportunities for technical discussions, networking and connecting with industrial partners. Our vision is to create a hub of AI expertise in the Heidelberg area.

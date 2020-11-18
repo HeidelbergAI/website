@@ -19,10 +19,11 @@ layout: default
           {% endif %}
           <span class="meta">
             <!--<a href="#">Start Bootstrap</a>-->
-	 {% if post.future_date %}
+	 {% if page.future_date %}
 		upcoming:
 	  {% endif %}
-      {% if page.do_not_show_date %}
+      {% if page.custom_date %}
+      {{ page.custom_date}}</span>
       {% else %}
       {{ page.date | date: '%B %d, %Y' }}</span>
       {% endif %}

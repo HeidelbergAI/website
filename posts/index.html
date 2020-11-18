@@ -16,11 +16,18 @@ background: https://78.media.tumblr.com/23eeea1415bc929a2e849fcc4dd2168b/tumblr_
       <h3 class="post-subtitle">{{ post.excerpt | strip_html | truncatewords: 15 }}</h3>
       {% endif %}
     </font></a>
+    <p class="post-meta"> <font color=#0085A1>
        	{% if post.future_date %}
-            <p class="post-meta"> <font color=#0085A1>upcoming:   {{ post.date | date: '%B %d, %Y' }}</font></p>
-	{% else %}
- 		<p class="post-meta">  {{ post.date | date: '%B %d, %Y' }}</p>
-           {% endif %}
+            upcoming:
+        {% endif %}
+        {% if post.custom_date %}
+              {{ post.custom_date}}
+        {% else %}
+              {{ post.date | date: '%B %d, %Y' }}
+        {% endif %}
+        </font></p>
+
+
     
   </article>
 
