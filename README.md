@@ -1,3 +1,11 @@
+# HeidelberAI Website Layout.
+- Home is in: _layouts/home.html
+- Events are saved in _posts/*.html
+- Members: Link to Meetup Page
+- About is in: about.html
+
+
+
 # [Start Bootstrap - Clean Blog](https://startbootstrap.com/template-overviews/clean-blog/) - Official Jekyll Version
 
 [Clean Blog](http://startbootstrap.com/template-overviews/clean-blog/) is a stylish, responsive blog theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This theme features a blog homepage, about page, contact page, and an example post page along with a working contact form powered by [Formspree](https://formspree.io/).
