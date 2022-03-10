@@ -1,7 +1,7 @@
 {
     "title": "Clean Blog Jekyll",
     "name": "startbootstrap-clean-blog-jekyll",
-    "version": "4.0.0",
+    "version": "4.0.12",
     "description": "Clean Blog is a Medium inspired blog theme for Bootstrap.",
     "keywords": [
         "css",
@@ -11,9 +11,9 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/template-overviews/clean-blog",
+    "homepage": "https://startbootstrap.com/themes/clean-blog-jekyll",
     "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll/issues",
+        "url": "https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll/issues",
         "email": "feedback@startbootstrap.com"
     },
     "license": "MIT",
@@ -23,22 +23,15 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll.git"
+        "url": "https://github.com/StartBootstrap/startbootstrap-clean-blog-jekyll.git"
     },
     "dependencies": {
-        "bootstrap": "4.0.0",
+        "bootstrap": "4.6.0",
         "font-awesome": "4.7.0",
-        "jquery": "3.3.1",
-        "popper.js": "1.12.9",
-        "startbootstrap-clean-blog": "4.0.0"
+        "jquery": "3.6.0",
+        "startbootstrap-clean-blog": "5.1.0"
     },
     "devDependencies": {
-        "browser-sync": "2.23.6",
-        "gulp": "^3.9.1",
-        "gulp-clean-css": "3.9.2",
-        "gulp-header": "2.0.1",
-        "gulp-rename": "^1.2.2",
-        "gulp-sass": "^3.1.0",
-        "gulp-uglify": "3.0.0"
+        "browser-sync": "2.26.14"
     }
 }

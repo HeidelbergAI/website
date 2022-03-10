@@ -3,7 +3,9 @@
 source "https://rubygems.org"
 gemspec
 
-gem "jekyll", "~> 3.6.0"
+# gem "jekyll", "~> 3.6.0"
+gem "jekyll" , "4.2.2" # does also not fix the problem!
+gem "webrick"
 # gem "jekyll"
 # fixing error: bundler: failed to load command: jekyll (/usr/local/lib/ruby/gems/3.0.0/bin/jekyll)
 # loads from ruby version 3.0.0 but cannot find jekyll!
